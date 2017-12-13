@@ -1,4 +1,4 @@
-package com.dicemaster.server.api;
+package com.dicemaster.server.api.common;
 
 /**
  * @author Adam Gapiński
