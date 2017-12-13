@@ -10,7 +10,7 @@ public abstract class Player {
     abstract void notifyMoveChange(Move move);
     abstract void notifyGameTableChange(GameTable gameTable);
     abstract void requestMove();
-    abstract void registerEventHandler(EventHandler eventHandler);
+    abstract void registerEventHandler(PlayerEventHandler playerEventHandler);
 
     private String id;
 

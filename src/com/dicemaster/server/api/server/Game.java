@@ -7,8 +7,8 @@ public abstract class Game {
 
 
     private List<Player> players;
-    abstract void addObserver(User user);
-    abstract void addPlayer(User user);
+    abstract void addObserver(Player player);
+    abstract void addPlayer(Player player);
 
     public List<Player> getPlayers() {
         return players;
