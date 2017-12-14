@@ -1,8 +1,8 @@
 package com.dicemaster.server.api.server;
 
-import com.dicemaster.server.api.common.Move;
+import com.dicemaster.server.api.common.MoveDTO;
 
 public interface PlayerEventHandler {
-    void onMoveRequest(Move move);
-    void onUserLeft(User user);
+    void onMoveRequest(MoveDTO moveDTO);
+    void onUserLeft();
 }

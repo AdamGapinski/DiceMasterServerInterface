@@ -1,15 +1,12 @@
 package com.dicemaster.server.api.server;
 
-import com.dicemaster.server.api.common.GameTable;
-import com.dicemaster.server.api.common.Move;
+import com.dicemaster.server.api.common.GameDTO;
 
 /**
  * @author Adam Gapiński
  */
 public abstract class Player {
-    abstract void notifyMoveChange(Move move);
-    abstract void notifyGameTableChange(GameTable gameTable);
-    abstract void requestMove();
+    abstract void notifyGameStateChange(GameDTO gameDTO);
     abstract void registerEventHandler(PlayerEventHandler playerEventHandler);
 
     private String id;
