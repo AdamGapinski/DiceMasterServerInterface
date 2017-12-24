@@ -5,9 +5,9 @@ import com.dicemaster.server.api.common.GameDTO;
 /**
  * @author Adam Gapiński
  */
-public abstract class Player {
+public abstract class GameParticipant {
     abstract void notifyGameStateChange(GameDTO gameDTO);
-    abstract void registerEventHandler(PlayerEventHandler playerEventHandler);
+    abstract void registerPlayerEventHandler(PlayerEventHandler playerEventHandler);
 
     private String id;
 

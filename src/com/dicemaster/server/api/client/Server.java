@@ -10,8 +10,8 @@ import java.util.List;
  */
 public interface Server {
 
-    ServerGame createGame(GameConfigDTO gameConfigDTO, GameEventHandler gameEventHandler, PlayerType playerType);
-    ServerGame requestJoinGame(GameDTO gameDTO, GameEventHandler gameEventHandler, PlayerType playerType);
+    ServerGame createGame(GameConfigDTO gameConfigDTO, GameEventHandler gameEventHandler, UserType userType);
+    ServerGame requestJoinGame(GameDTO gameDTO, GameEventHandler gameEventHandler, UserType userType);
 
     List<GameDTO> getAvailableGames();
     boolean registerClient(String username);
